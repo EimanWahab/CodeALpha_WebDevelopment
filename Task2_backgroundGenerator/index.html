@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icon2.png" />
+
+    
+</head>
+<body>
+    <div class="container">
+        <h1>BACKGROUND COLOR GENERATOR</h1>
+        <div class="color-options">
+            <label for="colorType">Select Color Type </label>
+            <select id="colorType">
+                <option value="basic">Basic Color</option>
+                <option value="gradient">Gradient Color</option>
+            </select>
+        </div>
+        <div id="basicColor" class="color-picker">
+            <label for="basicColorInput">Basic Color </label>
+            <input type="color" id="basicColorInput">
+        </div>
+        <div id="gradientColor" class="color-picker" style="display: none;">
+            <label for="gradientColorInput1">Gradient Color 1 </label>
+            <input type="color" id="gradientColorInput1">
+            <label for="gradientColorInput2">Gradient Color 2 </label>
+            <input type="color" id="gradientColorInput2">
+        </div>
+        <button id="generateButton">Generate</button>
+        <div class="color-code">
+            <p>Generated Color Code </p>
+            <input type="text" id="colorCode" readonly>
+            <button id="copyButton">Copy</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
